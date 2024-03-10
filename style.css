@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333333;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h2 {
+    color: #CCCCCC;
+    margin-bottom: 22px;
+    font-size: 40px;
+}
+
+h3 {
+    color: #CCCCCC;
+    margin-bottom: 22px;
+}
+
+button {
+    background-color: #7d7c7c;
+    border: none;
+    width: 360px;
+    height: 40px;
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 100%;
+}
+
+header {
+    background-color: #1A1A1A;
+}
+
+header .container {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li a:hover {
+    color: white;
+}
+
+header a  {
+    margin: 25px;
+}
+
+video {
+    width: 1400px;
+    margin: 0 40px;
+    margin-bottom: 60px;
+}
+
+.container section {
+    text-align: center;
+}
+
+/* Adicionando estilo para a imagem dentro da seção sobre */
+#about {
+    display: flex;
+    justify-content: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    margin-bottom: 50px; 
+}
+
+.container .about-content img {
+    width: 800px; 
+    margin: 20px 50px;
+}
+
+.about-content .text {
+    flex-grow: 1;
+}
+
+.about-content .text h2 {
+    margin-top: 0;
+}
+
+
+
+/* foloow */
+#folow ul, #folow h2 {
+    display: flex;
+    list-style-type: none;
+}
+
+#folow ul li a {
+    padding: 24px 28px;
+}
+
+#folow img {
+    width: 35px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#folow , #sing-in {
+    margin: 0 50px;
+}
+
+#sing-in form {
+    display: flex;
+    flex-direction: column;
+}
+
+#sing-in form {
+    width: 360px;
+}
+
+
+footer {
+    background-color: #1A1A1A;
+    padding: 18px;
+}
+
+
+/* ajustando para smartphones */
+@media screen and (max-width: 768px) {}
+    body {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%; 
+    }
+
+    video {
+        width: 100%; 
+        margin: 0; 
+    }
+
+    .about-content {
+        width: 100%;
+        display: block;
+        text-align: justify;
+        width: 100%;
+    }
+
+    .about-content img {
+        margin: 0;        
+        width: 100%; 
+    }
+
+    .about-content .text {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .login {
+        flex-direction: column;
+        text-align: center; 
+    }
+
+    #folow, #sing-in {
+        margin: 20px 0; 
+
+    #sing-in form {
+        width: 100%; 
+    }
+
+    header .container,
+    footer .container {
+        padding: 16px 0;
+    }
+}
